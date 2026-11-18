@@ -1,0 +1,32 @@
+
+body {
+    background-color: #e8f2f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#clock {
+    font-family: Arial, sans-serif;
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #527fa3;
+    transition: transform 0.5s;
+    animation: colorChange 5s infinite alternate;
+}
+
+#clock:hover {
+    transform: scale(1.1);
+}
+
+@keyframes colorChange {
+    from {
+        color: #527fa3;
+    }
+    to {
+        color: #b78eb5;
+    }
+}
